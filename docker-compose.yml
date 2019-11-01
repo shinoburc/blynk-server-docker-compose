@@ -7,6 +7,7 @@ services:
       - "8080:8080"
       - "8441:8441"
       - "9443:9443"
-    #volumes:
-    #  - /var/run/docker.sock:/tmp/docker.sock:ro
+    volumes:
+      - ./blynk/data:/data
+      - ./blynk/server.properties:/config/server.properties
     restart: always

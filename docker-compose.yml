@@ -3,6 +3,9 @@ version: '3'
 services:
   blynk:
     image: mpherg/blynk-server:latest
+    ### build for raspberrypi ###
+    #build:
+    #  context: blynk
     ports:
       - "8080:8080"
       - "8441:8441"

@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  blynk:
+    build:
+      context: blynk
+    ports:
+      - "8080:8080"
+      - "8441:8441"
+      - "9443:9443"
+    volumes:
+      - ./blynk/data:/data
+      - ./blynk/server.properties:/config/server.properties
+    restart: always

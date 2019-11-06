@@ -12,16 +12,7 @@ $ docker-compose up -d
 ```sh
 $ git clone https://github.com/shinoburc/blynk-server-docker-compose.git
 $ cd blynk-server-docker-compose
-$ vi docker-compose.yml
-```
-```yaml
-    services:
-    blynk:
-      #image: mpherg/blynk-server:latest
-      build:
-        context: blynk
-```
-```sh
+$ cp docker-compose-raspberrypi.yml docker-compose.yml
 $ docker-compose up -d
 ```
 

@@ -13,11 +13,13 @@ $ docker-compose up -d
 $ git clone https://github.com/shinoburc/blynk-server-docker-compose.git
 $ cd blynk-server-docker-compose
 $ vi docker-compose.yml
+```
   services:
   blynk:
     #image: mpherg/blynk-server:latest
     build:
       context: blynk
+```sh
 $ docker-compose up -d
 ```
 

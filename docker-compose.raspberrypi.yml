@@ -4,6 +4,9 @@ services:
   blynk:
     build:
       context: blynk
+      args:
+        - http_proxy=${http_proxy}
+        - https_proxy=${https_proxy}
     ports:
       - "8080:8080"
       - "8441:8441"

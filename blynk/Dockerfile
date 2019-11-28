@@ -1,4 +1,4 @@
-FROM bellsoft/liberica-openjdk-debian:12
+FROM bellsoft/liberica-openjdk-debian:latest
 
 ENV BLYNK_SERVER_VERSION 0.41.11
 
